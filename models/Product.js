@@ -32,6 +32,9 @@ Product.init(
       type: DataTypes.INTEGER,
       allownull:false,
       defaultValue: 10,
+      validate: {
+        isInt: true
+      }
     },
     category_id:{
       type: DataTypes.INTEGER,
